@@ -1,0 +1,75 @@
+html {
+    background-image: url(../image/background.jpg);
+    background-size: 100vh 100vh;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+
+.informacoes {
+    max-width: 300px;
+    margin-right: 60px;
+    color: white;
+}
+
+.informacoes h2 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 11px;
+}
+
+.informacoes p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.formulario {
+    width: 340px;
+    height: 378px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.formulario input{
+    width: 298px;
+    height: 35px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.formulario .campo p {
+    color: #F52E2E;
+    font-size: 8px;
+}
+
+.formulario .mensagem {
+    height: 100px;
+}   
+
+.formulario button {
+    width: 298px;
+    height: 41px;
+    margin-top: 11px;
+    color: #fff;
+    background-color: #3CCC87;
+    border-radius: 5px;
+    border-color: #3CCC87;
+}
+
+.formulario .campo .vazio {
+    border-color: #F52E2E;
+}
+
+.formulario .campo .preenchido {
+    border-color: #00C22B;
+}
+
+.campo .esconder {
+    display: none;
+}
