@@ -41,9 +41,10 @@ main {
     height: 35px;
     border-radius: 5px;
     border-width: 1px;
+    margin-top: 6px;
 }
 
-.formulario .campo p {
+.formulario .obrigatorio {
     color: #F52E2E;
     font-size: 8px;
 }
@@ -62,7 +63,7 @@ main {
     border-color: #3CCC87;
 }
 
-.formulario .campo .vazio {
+.formulario .vazio {
     border-color: #F52E2E;
 }
 
@@ -70,6 +71,6 @@ main {
     border-color: #00C22B;
 }
 
-.campo .esconder {
+.formulario .campo .esconder {
     display: none;
 }

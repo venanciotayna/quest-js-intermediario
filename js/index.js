@@ -1,18 +1,21 @@
-const inputs = document.querySelectorAll('.input')
-const obrigatorio = document.querySelectorAll('.obrigatorio')
-const enviar = document.querySelector('.enviar')
+const campos = document.querySelectorAll('.campo');
+const inputs = document.querySelectorAll('.input');
+const obrigatorio = document.querySelectorAll('.obrigatorio');
 
-enviar.addEventListener('click', () => {
-    inputs.forEach(input => {
-      let local = input.classList
-      if  (inputs.value != '') {
-        inputs.classList.remove('vazio');
-        inputs.classList.add('preenchido');
-        obrigatorio[local].classList.add('esconder');
-      } else {
-        inputs.classList.remove('preenchido');
-        inputs.classList.add('vazio');
-        obrigatorio[local].classList.remove('esconder');
-      }
-    })
-})
+function enviar() {
+  for (const campo of campos) {
+    const input = campo.querySelector('.input'
+    );
+    const error = campo.querySelector('.obrigatorio');
+
+    if (input.value === "") {
+      input.classList.add('vazio');
+      input.classList.remove('preechido');
+      error.classList.remove('esconder');
+    } else {
+      input.classList.remove('vazio');
+      input.classList.add('preenchido');
+      error.classList.add('enconder');
+    }
+  }
+}
